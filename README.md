@@ -1,2 +1,2 @@
 # basic-three-repo
-a basic three rape to start with
+a basic threeJS rape to start with
