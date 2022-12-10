@@ -3,11 +3,12 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import Stats from 'three/examples/jsm/libs/stats.module'
 import { GUI } from 'dat.gui'
-import { Vector2, Vector3 } from 'three'
+import { Vector3 } from 'three'
 
 
 let model, arno, mini_arno
 let view_scale
+
 
 const scene = new THREE.Scene()
 scene.name = "main_scene"
@@ -26,7 +27,7 @@ camera.lookAt(0,5,5)
 // renderer
 const renderer = new THREE.WebGLRenderer( { 
     alpha: true,
-    antialias: true
+    antialias: true,
 } )
 renderer.setSize(window.innerWidth, window.innerHeight)
 renderer.setClearColor( 0x000000, 0 );
@@ -106,7 +107,10 @@ function render() {
 
 animate()
 
+// ToDo:
+function myUpdate() {
 
+}
 
 
 // loaders
